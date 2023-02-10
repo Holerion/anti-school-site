@@ -1,0 +1,152 @@
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Michroma', sans-serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Russo One', sans-serif;
+// font-family: 'Unbounded', cursive;
+
+
+$akcent-color:#621f23;
+$akcent2-color:#d23d21;
+$akcent3-color:#3c0d4e;
+$main-color:#ecebe4;
+$second-color:#6c7690;
+$text-color:rgb(22, 22, 22);
+$white-color:rgb(245, 245, 245);
+
+
+
+@import "./_regestration.scss";
+@import "./_footer.scss";
+@import "./_heder.scss";
+@import "./_aboutUs.scss";
+@import "./_info.scss";
+@import "./_ourSection.scss";
+
+li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  background-color: $main-color;
+}
+
+h1{ 
+  font-family: 'Josefin Sans', sans-serif;
+}
+h3,h2{ 
+font-family: 'Oswald', sans-serif;
+}
+s{
+  text-decoration: none;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 55%;
+    border-bottom: 4px solid $akcent2-color;
+    width: 115px;    
+  }
+}
+.button{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow:  7px 7px 12px #8989898e,
+               -7px -7px 12px #ffffff7e;
+
+  transition: .5s;
+
+  &.primary{
+    background-color: $akcent2-color;
+  }
+  
+  & .secondary{
+      background-color: aliceblue;
+  }
+  
+  &:hover,&:focus{
+    transition: .5s;
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid rgb(0, 0, 0);
+  }
+
+
+}
+
+
+.hide {
+  position: absolute;
+  z-index: -1;
+  top: -100px;
+  left: -100px;
+}
+
+.container-text {
+  margin: auto;
+  min-width: 250px;
+  max-width: 50%;
+}
+
+section {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero {
+  height: 900px;
+  background: linear-gradient(rgba($akcent3-color,0.1), rgba($akcent2-color,0.2)), url(../../image/hero1.png);
+  background-size: cover;
+
+  &-content {
+    margin-top: 250px;
+  }
+
+  &-title {
+    font-size: 5rem;
+  }
+  &-text {
+    margin-bottom: 80px;
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

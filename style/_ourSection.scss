@@ -1,0 +1,20 @@
+.our-section {
+    p.section-text {
+      margin-bottom: 150px;
+    }
+    .list-sectio {
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 150px 500px;
+  
+      .item {
+        background-color: $akcent2-color;
+        padding: 25px 15px;
+      }
+    }
+  }
+  
+  

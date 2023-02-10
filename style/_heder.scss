@@ -1,0 +1,70 @@
+
+header {
+    width: 100%;
+    position: fixed;
+    max-height: 70px;
+    z-index: 100;
+  
+    nav {
+      display: flex;
+      width: 90%;
+      margin: auto;
+      justify-content: space-between;
+  
+      max-height: 70px;
+  
+  
+      & .logo {
+        border-radius: 0 0 15px 15px;
+  
+        img {
+          object-fit: cover;
+          height: 120px;
+        }
+      }
+  
+      ul {
+        display: flex;
+        border-radius: 0 0 15px 15px;
+        box-shadow:  20px 20px 40px #00000071,
+        -20px -20px 40px #ffffff00;
+  
+        li {
+          background-color: aliceblue;
+          display: flex;
+  
+          a {
+            display: flex;
+            justify-content: center;
+  
+            width: 170px;
+            padding: 20px 45px;
+
+            color: rgb(3, 3, 3);
+          }
+  
+          &:first-child {
+            border-radius: 0 0 0 15px;
+          }
+          &:last-child {
+            border-radius: 0 0 15px 0;
+          }
+  
+          &.active {
+            background-color: tomato;
+            a{
+              color: rgb(255, 255, 255);
+            }
+          }
+  
+          &:hover,
+          &:focus {
+            background-color: tomato;
+            a{
+              color: rgb(255, 255, 255);
+            }
+          }
+        }
+      }
+    }
+  }
