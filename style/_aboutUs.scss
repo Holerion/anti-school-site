@@ -19,14 +19,11 @@
 
     img{
       border-radius: 25px;
-      -webkit-border-radius: 25px;
-      -moz-border-radius: 25px;
-      -ms-border-radius: 25px;
-      -o-border-radius: 25px;
 }
 .png{
   position: relative;
-  top: -150px;
+  top: -250px;
   left: -250px;
+  transform: rotatey(180deg);
 }
 }

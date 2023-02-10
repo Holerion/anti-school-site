@@ -6,7 +6,7 @@
 
 
 $akcent-color:#621f23;
-$akcent2-color:#d23d21;
+$akcent2-color:#fc6108;
 $akcent3-color:#3c0d4e;
 $main-color:#ecebe4;
 $second-color:#6c7690;
@@ -67,8 +67,6 @@ s{
   padding: 15px 30px;
   border: 1px solid white;
   border-radius: 10px;
-  box-shadow:  7px 7px 12px #8989898e,
-               -7px -7px 12px #ffffff7e;
 
   transition: .5s;
 
@@ -77,13 +75,13 @@ s{
   }
   
   & .secondary{
-      background-color: aliceblue;
+      background-color: $main-color;
   }
   
   &:hover,&:focus{
     transition: .5s;
     color: rgb(0, 0, 0);
-    background-color: aliceblue;
+    background-color: $main-color;
     display: inline-block;
     padding: 15px 30px;
     border: 1px solid rgb(0, 0, 0);

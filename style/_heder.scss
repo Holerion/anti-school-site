@@ -30,8 +30,11 @@ header {
         -20px -20px 40px #ffffff00;
   
         li {
-          background-color: aliceblue;
+          background: $white-color;
+             
           display: flex;
+
+          transition: 1s;
   
           a {
             display: flex;
@@ -40,7 +43,7 @@ header {
             width: 170px;
             padding: 20px 45px;
 
-            color: rgb(3, 3, 3);
+            color: $text-color;
           }
   
           &:first-child {
@@ -51,17 +54,24 @@ header {
           }
   
           &.active {
-            background-color: tomato;
+            background: $akcent-color;
+            box-shadow: inset 5px 5px 8px darken($akcent-color, 5),
+            inset -5px -5px 8px lighten($akcent-color, 5) ;
+
+
+
             a{
-              color: rgb(255, 255, 255);
+              color: $white-color;
             }
           }
   
           &:hover,
           &:focus {
-            background-color: tomato;
+            transition: 0.3s;
+            background-color:  lighten($akcent-color, 5) ;
+            box-shadow:none;
             a{
-              color: rgb(255, 255, 255);
+              color: $white-color;
             }
           }
         }

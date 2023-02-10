@@ -1,6 +1,9 @@
 .our-section {
+  h2{
+    font-size: 4rem;
+  }
     p.section-text {
-      margin-bottom: 150px;
+      margin-bottom: 50px;
     }
     .list-sectio {
       width: 80%;
@@ -8,11 +11,25 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      gap: 150px 500px;
+      gap: 20px 200px;
   
       .item {
-        background-color: $akcent2-color;
-        padding: 25px 15px;
+        padding: 25px 60px;
+
+        border-radius: 15px;
+        background: #621f23;
+        box-shadow: inset 8px 8px 6px #361113,
+                    inset -8px -8px 6px #8e2d33;
+
+                    
+                    *{
+                      color: $white-color;
+                    }
+      }
+
+
+      .list-sectio{
+
       }
     }
   }

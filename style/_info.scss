@@ -47,15 +47,15 @@
         }
   
         &.img1 {
-          @include imgbg(url("../../image/imginfo1.jpg"));
-          background-position: 20%;
+          @include imgbg(url("../../image/info/imginfo1.jpg"));
+          background-position: 100%;
         }
         &.img2 {
-          @include imgbg(url("../../image/imginfo3.jpg"));        
+          @include imgbg(url("../../image/info/imginfo2.jpg"));        
           background-position: 50%;
         }
         &.img3 {
-          @include imgbg(url("../../image/imginfo2.jpg"));
+          @include imgbg(url("../../image/info/imginfo3.png"));
           background-position: 50%;
         }
         &.img4 {
@@ -70,7 +70,7 @@
           padding: 50px 30px;
           width: 350px;
           a {         
-            color: white;
+            color: $white-color;
           }
           h3 {
             font-size: 2rem;
