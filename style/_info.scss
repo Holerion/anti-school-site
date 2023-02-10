@@ -47,15 +47,15 @@
         }
   
         &.img1 {
-          @include imgbg(url("../../image/info/imginfo1.jpg"));
+          @include imgbg(url("../../image/Info/imginfo1.jpg"));
           background-position: 100%;
         }
         &.img2 {
-          @include imgbg(url("../../image/info/imginfo2.jpg"));        
+          @include imgbg(url("../../image/Info/imginfo2.jpg"));        
           background-position: 50%;
         }
         &.img3 {
-          @include imgbg(url("../../image/info/imginfo3.png"));
+          @include imgbg(url("../../image/Info/imginfo3.png"));
           background-position: 50%;
         }
         &.img4 {
