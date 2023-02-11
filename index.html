@@ -6,30 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ANTI SCHOOL</title>
     <link rel="stylesheet" href="./style/css/style.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Michroma&family=Oswald:wght@300;500&family=Russo+One&family=Unbounded&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Michroma&family=Oswald:wght@300;500&family=Russo+One&family=Unbounded&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body onload="slideBG(document.querySelector('.hero'))">
+    <header>
+      <nav>
+        <div class="logo"><img src="./image/logo.svg" height="80" alt="" /></div>
+        <ul>
+          <li class="active"><a href="./">Головна</a></li>
+          <li><a href="./aboutUs.html">Про нас</a></li>
+          <li><a href="./ways.html">Направлення</a></li>
+          <li><a href="./contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <header>
-        <nav>
-          <div class="logo"><img src="./image/logo.svg" height="80" alt="" /></div>
-          <ul>
-            <li class="active"><a href="./">Головна</a></li>
-            <li><a href="./">Про нас</a></li>
-            <li><a href="./">Направлення</a></li>
-            <li><a href="./">Контакти</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <section class="hero mask">
+      <section class="hero mask" >
         <div class="hero-content">
           <h1 class="hero-title"><span>ANTI</span> <span>SCHOOL</span></h1>
           <p class="hero-text">Твій куточок для творчості і розвитку</p>
-          <a href="./" class="button primary">Зареєструватися</a>
+          <a href="#form" class="button primary">Зареєструватися</a>
         </div>
       </section>
 
@@ -38,7 +39,7 @@
         <ul class="items">
           <li class="item img1">
             <div class="content">
-              <a href="./">
+              <a href="#form">
                 <h3>Programing</h3>
                 <span>Навчись створювати десктопні програми.</span>
               </a>
@@ -46,7 +47,7 @@
           </li>
           <li class="item img2">
             <div class="content">
-              <a href="./">
+              <a href="#form">
                 <h3>Web-design</h3>
                 <span>Створи свій перший сайт.</span>
               </a>
@@ -54,7 +55,7 @@
           </li>
           <li class="item img3">
             <div class="content">
-              <a href="./">
+              <a href="#form">
                 <h3>ART</h3>
                 <span>Поринь в світ креативу.</span>
               </a>
@@ -62,9 +63,9 @@
           </li>
           <li class="item img4">
             <div class="content">
-              <a href="./">
+              <a href="#form">
                 <h3>Детальніше</h3>
-                <br>
+                <br />
                 <span><i class="fa-solid fa-angles-down fa-3x"></i></span>
               </a>
             </div>
@@ -74,26 +75,22 @@
 
       <section class="about-us">
         <h2 class="title">Про нас</h2>
-        <h3 class="second-title"> Онлайн <s>школа</s> ?!?</h3>
+        <h3 class="second-title">Онлайн <s>школа</s> ?!?</h3>
         <p class="container-text">
           Anti school - це куточок в якому ти можеш розвиватись у своєму улюбленому направленні. Програмування, веб-дизайн,
           мистецтво (digital art), монтаж. І це ще не всі можливі напрямки, які будуть створюватись і відкриватись в нашій
           організації.
         </p>
-        <p class="container-text">
-            Головна особливість Anti school те, що вона знаходиться на сервері в соц. мережі Discord.
-        </p>
-        <a href="./" class="button primary">Детальніше</a>
+        <p class="container-text">Головна особливість Anti school те, що вона знаходиться на сервері в соц. мережі Discord.</p>
+        <a href="./aboutUs.html" class="button primary">Детальніше</a>
 
-        <img src="./image/6.jpg" width="600" height="400" alt="" style="object-fit: cover;" />
+        <img src="./image/6.jpg" width="600" height="400" alt="" style="object-fit: cover" />
         <img class="png" src="./image/pngegg.png" width="300" height="300" alt="" />
       </section>
 
       <section class="our-section">
         <h2>Наші cоцмережі</h2>
-        <p class="section-text">
-          Дізнайтесь про Нас більше.
-        </p>
+        <p class="section-text">Дізнайтесь про Нас більше.</p>
         <ul class="list-sectio">
           <li class="item img1">
             <div>
@@ -106,9 +103,9 @@
               <a href="https://www.instagram.com/_antischool_/" target="_blank" class="button primary">Завітати</a>
             </div>
           </li>
-          <li class=" img4"><img src="./image/pngegg3.png" width="250" alt="" /></li>
-          <li class=" img3"><img src="./image/pngegg(1).png" width="250" alt=""  /></li>
-        
+          <li class="img4"><img src="./image/pngegg3.png" width="250" alt="" /></li>
+          <li class="img3"><img src="./image/pngegg(1).png" width="250" alt="" /></li>
+
           <li class="item img2">
             <div>
               <img src="" width="50" alt="" />
@@ -120,12 +117,13 @@
               <a href="https://discord.gg/3PfktzSVct" target="_blank" class="button primary">Завітати</a>
             </div>
           </li>
-          </ul>
+        </ul>
       </section>
 
       <section class="regestratio">
         <div class="content">
-          <form action="">
+          <form id="form" action="./sendmail.php" method="post">
+            <div id="form"></div>
             <h2>Реєстрація</h2>
 
             <div class="container">
@@ -135,55 +133,58 @@
               <input class="input" type="text" name="Age" id="Age" placeholder="Вік" />
             </div>
 
-
             <h3>Напрямки</h3>
 
             <ul id="checklist" class="container">
-              <li class="item ">
-              <input id="01" type="checkbox" name="r" value="1">
-              <label for="01">ART</label>
+              <li class="item">
+                <input id="01" type="checkbox" name="r" value="1" />
+                <label for="01">ART</label>
               </li>
-              <li class="item ">
-              <input id="02" type="checkbox" name="r" value="2">
-              <label for="02">programing</label>
+              <li class="item">
+                <input id="02" type="checkbox" name="r" value="2" />
+                <label for="02">programing</label>
               </li>
-              <li class="item ">
-              <input id="03" type="checkbox" name="r" value="3">
-              <label for="03">web-design</label>
+              <li class="item">
+                <input id="03" type="checkbox" name="r" value="3" />
+                <label for="03">web-design</label>
               </li>
             </ul>
-            
-            
 
-
-            <input type="submit" class="button " value="submit" />
+            <input type="submit" class="button" value="submit" />
           </form>
 
           <div class="fon1"></div>
           <div class="fon2"></div>
         </div>
       </section>
-
-      <footer>
-        <div class="text-content">
-          <h2>Зателефонуй до Нас, аби підібрати направлення саме для Тебе!</h2>
-
-        </div>
-
-        <ul class="number">
-          <li><a href="tel:+380677339195"><i class="fa-solid fa-mobile"></i><span>+38(067) 733-91-95</span></a></li>
-          <li><a href="tel:+380937323439"><i class="fa-solid fa-mobile-button"></i><span>+38(093) 732-34-39</span></a></li>
-
-        </ul>
-        <ul class="social">
-          <li><a href="https://www.instagram.com/_antischool_/"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="https://t.me/holerion"><i class="fa-brands fa-telegram"></i></a></li>
-          <li><a href="https://discord.gg/3PfktzSVct"><i class="fa-brands fa-discord"></i></a></li>
-        </ul>
-      </footer>
     </main>
+    <footer>
+      <div class="text-content">
+        <h2>Зателефонуй до Нас, аби підібрати направлення саме для Тебе!</h2>
+      </div>
 
-    <script src=""></script>
+      <ul class="number">
+        <li>
+          <a href="tel:+380677339195"><i class="fa-solid fa-mobile"></i><span>+38(067) 733-91-95</span></a>
+        </li>
+        <li>
+          <a href="tel:+380937323439"><i class="fa-solid fa-mobile-button"></i><span>+38(093) 732-34-39</span></a>
+        </li>
+      </ul>
+      <ul class="social">
+        <li>
+          <a href="https://www.instagram.com/_antischool_/"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://t.me/holerion"><i class="fa-brands fa-telegram"></i></a>
+        </li>
+        <li>
+          <a href="https://discord.gg/3PfktzSVct"><i class="fa-brands fa-discord"></i></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="./script.js"></script>
     <script src="https://kit.fontawesome.com/03abd041c3.js" crossorigin="anonymous"></script>
   </body>
 </html>

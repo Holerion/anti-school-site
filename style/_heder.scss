@@ -6,8 +6,13 @@ header {
     z-index: 100;
   
     nav {
+
       display: flex;
+
       width: 90%;
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
       margin: auto;
       justify-content: space-between;
   
@@ -16,7 +21,9 @@ header {
   
       & .logo {
         border-radius: 0 0 15px 15px;
-  
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
         img {
           object-fit: cover;
           height: 120px;
@@ -25,6 +32,10 @@ header {
   
       ul {
         display: flex;
+
+        @media screen and (max-width: 900px) {
+          display: flex;
+        }
         border-radius: 0 0 15px 15px;
         box-shadow:  20px 20px 40px #00000071,
         -20px -20px 40px #ffffff00;
@@ -44,13 +55,26 @@ header {
             padding: 20px 45px;
 
             color: $text-color;
+
+            @media screen and (max-width: 900px) {
+              width: 25vw;
+              
+            padding: 10px 10px;
+            font-size: 0.8rem;
+            }
           }
   
           &:first-child {
             border-radius: 0 0 0 15px;
+            @media screen and (max-width: 900px) {
+              border-radius: 0 0 0 0;
+            }
           }
           &:last-child {
             border-radius: 0 0 15px 0;
+            @media screen and (max-width: 900px) {
+              border-radius: 0 0 0 0;
+            }
           }
   
           &.active {

@@ -8,10 +8,22 @@
     .list-sectio {
       width: 80%;
       margin: auto;
+
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       gap: 20px 200px;
+
+      @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr;    
+        
+        .img4{
+          grid-column: 1;
+          grid-row: 1;
+        }
+
+      }
+
   
       .item {
         padding: 25px 60px;
