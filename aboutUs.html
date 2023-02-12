@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Michroma&family=Oswald:wght@300;500&family=Russo+One&family=Unbounded&display=swap" rel="stylesheet">
 
   </head>
-  <body>
+  <body onload="slideBG(document.querySelector('.hero'))">
 
       <header>
         <nav>
@@ -52,7 +52,15 @@
       </footer>
 
 
-    <script src=""></script>
+      <script>
+        const slideBG = (herBG) => {
+          herBG.style.backgroundPosition = scrollY / 25 + 10 + "%";
+        };
+  
+        window.addEventListener("scroll", function () {
+          slideBG(document.querySelector(".hero"));
+        });
+      </script>
     <script src="https://kit.fontawesome.com/03abd041c3.js" crossorigin="anonymous"></script>
   </body>
 </html>

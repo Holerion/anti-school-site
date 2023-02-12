@@ -6,25 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ANTI SCHOOL</title>
     <link rel="stylesheet" href="./style/css/style.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Michroma&family=Oswald:wght@300;500&family=Russo+One&family=Unbounded&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Michroma&family=Oswald:wght@300;500&family=Russo+One&family=Unbounded&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body onload="slideBG(document.querySelector('.hero'))">
+    <header>
+      <nav>
+        <div class="logo"><img src="./image/logo.svg" height="80" alt="" /></div>
+        <ul>
+          <li><a href="./">Головна</a></li>
+          <li><a href="./aboutUs.html">Про нас</a></li>
+          <li><a href="./ways.html">Направлення</a></li>
+          <li class="active"><a href="./contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <header>
-        <nav>
-          <div class="logo"><img src="./image/logo.svg" height="80" alt="" /></div>
-          <ul>
-            <li><a href="./">Головна</a></li>
-            <li ><a href="./aboutUs.html">Про нас</a></li>
-            <li><a href="./ways.html">Направлення</a></li>
-            <li class="active"><a href="./contacts.html">Контакти</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
+    <main>
       <section class="hero mask">
         <div class="hero-content">
           <h1 class="hero-title"><span>ANTI</span> <span>SCHOOL</span></h1>
@@ -33,43 +35,73 @@
         </div>
       </section>
 
-      <section>
-        <ul class="contacts">
-          <li class="active">Discord</li>
-          <li><img src="./image/6.jpg" height="100%" width="100%" style="object-fit: cover;" alt=""></li>
-          <li><img src="./image/6.jpg" height="100%" width="100%" style="object-fit: cover;" alt=""></li>
-          <li class="active">Instagram</li>
-          <li class="active">Telegram</li>
-          <li><img src="./image/6.jpg" height="100%" width="100%" style="object-fit: cover;" alt=""></li>
-          <li><img src="./image/6.jpg" height="100%" width="100%" style="object-fit: cover;" alt=""></li>
-          <li class="active">number</li>
-        </ul>
+      <section class="contacts">
+        <div class="fon1"></div>
+        <div class="fon2"></div>
+        <div class="angry-grid">
+          <div id="item-0"></div>
+          <div id="item-1">
+
+            <div class="container">
+              <a style="--i:0" href="https://www.instagram.com/_antischool_/"><i class="fa-brands fa-instagram"></i></a>
+              <a style="--i:1" href="https://www.instagram.com/_antischool_/"><i class="fa-brands fa-instagram"></i></a>
+            <a style="--i:2" href="https://www.instagram.com/_antischool_/"><i class="fa-brands fa-instagram"></i></a>
+            <a style="--i:3" href="https://www.instagram.com/_antischool_/"><i class="fa-brands fa-instagram"></i></a>
+            <a style="--i:4" href="https://www.instagram.com/_antischool_/"><i class="fa-brands fa-instagram"></i></a>
+            <a style="--i:5" href="https://www.instagram.com/_antischool_/"><i class="fa-brands fa-instagram"></i></a>
+            <a style="--i:6" href="https://www.instagram.com/_antischool_/"><i class="fa-brands fa-instagram"></i></a>
+            <a style="--i:7" href="https://www.instagram.com/_antischool_/"><i class="fa-brands fa-instagram"></i></a>
+            
+            <a href="https://www.instagram.com/_antischool_/">
+            <img style="--i:0" src="./image/lotos.png" width="220px" alt="">
+          </a>
+          </div>
+
+
+          </div>
+          <div id="item-2"></div>
+          <div id="item-3"></div>
+        </div>
 
 
       </section>
-
-
     </main>
-      <footer>
-        <div class="text-content">
-          <h2>Зателефонуй до Нас, аби підібрати направлення саме для Тебе!</h2>
 
-        </div>
+    <footer>
+      <div class="text-content">
+        <h2>Зателефонуй до Нас, аби підібрати направлення саме для Тебе!</h2>
+      </div>
 
-        <ul class="number">
-          <li><a href="tel:+380677339195"><i class="fa-solid fa-mobile"></i><span>+38(067) 733-91-95</span></a></li>
-          <li><a href="tel:+380937323439"><i class="fa-solid fa-mobile-button"></i><span>+38(093) 732-34-39</span></a></li>
+      <ul class="number">
+        <li>
+          <a href="tel:+380677339195"><i class="fa-solid fa-mobile"></i><span>+38(067) 733-91-95</span></a>
+        </li>
+        <li>
+          <a href="tel:+380937323439"><i class="fa-solid fa-mobile-button"></i><span>+38(093) 732-34-39</span></a>
+        </li>
+      </ul>
+      <ul class="social">
+        <li>
+          <a href="https://www.instagram.com/_antischool_/"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://t.me/holerion"><i class="fa-brands fa-telegram"></i></a>
+        </li>
+        <li>
+          <a href="https://discord.gg/3PfktzSVct"><i class="fa-brands fa-discord"></i></a>
+        </li>
+      </ul>
+    </footer>
 
-        </ul>
-        <ul class="social">
-          <li><a href="https://www.instagram.com/_antischool_/"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="https://t.me/holerion"><i class="fa-brands fa-telegram"></i></a></li>
-          <li><a href="https://discord.gg/3PfktzSVct"><i class="fa-brands fa-discord"></i></a></li>
-        </ul>
-      </footer>
+    <script>
+      const slideBG = (herBG) => {
+        herBG.style.backgroundPosition = scrollY / 25 + 10 + "%";
+      };
 
-
-    <script src=""></script>
+      window.addEventListener("scroll", function () {
+        slideBG(document.querySelector(".hero"));
+      });
+    </script>
     <script src="https://kit.fontawesome.com/03abd041c3.js" crossorigin="anonymous"></script>
   </body>
 </html>

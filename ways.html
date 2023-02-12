@@ -65,7 +65,15 @@
       </ul>
     </footer>
 
-    <script src=""></script>
+    <script>
+      const slideBG = (herBG) => {
+        herBG.style.backgroundPosition = scrollY / 25 + 10 + "%";
+      };
+
+      window.addEventListener("scroll", function () {
+        slideBG(document.querySelector(".hero"));
+      });
+    </script>
     <script src="https://kit.fontawesome.com/03abd041c3.js" crossorigin="anonymous"></script>
   </body>
 </html>

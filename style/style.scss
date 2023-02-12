@@ -39,6 +39,8 @@ a {
 }
 
 body {
+  width: 100%;
+  overflow: hidden scroll;
 
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
@@ -120,7 +122,7 @@ section {
   height: 900px;
   background: linear-gradient(rgba($akcent3-color,0.1), rgba($akcent2-color,0.2)), url(../../image/hero1.png);
   background-size: cover;
-  background-size: 120%;
+  background-size: auto 140%;
 
   &-content {
     margin-top: 250px;
