@@ -24,7 +24,7 @@ $white-color:rgb(245, 245, 245);
 @import "./_contactsPage.scss";
 
 li {
-  list-style: none;
+  list-style: none;  
 }
 
 * {
@@ -134,8 +134,10 @@ section {
   &-text {
     margin-bottom: 80px;
     font-size: 2rem;
-  }
+  }  
+  
 }
+
 
 
 
