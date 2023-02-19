@@ -1,4 +1,6 @@
 footer {
+  width: 100vw;
+  overflow: hidden ;
   height: 500px;
   padding: 5%;
   background-color: $akcent-color;
@@ -36,17 +38,17 @@ footer {
   .social::before {
     content: "";
     position: absolute;
-    width: 100%;
+    width:  15vw;
     border: 1px solid $white-color;
-    left: -100%;
+    left: -15vw;
     top: 50%;
   }
   .social::after {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 15vw;
     border: 1px solid $white-color;
-    right: -100%;
+    right: -15vw;
     top: 50%;
   }
   .social {
