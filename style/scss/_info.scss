@@ -25,13 +25,14 @@ $bp-lg: 800px;
   margin: 0 auto;
   margin-top: -150px;
   font-family: var(--font-sans);
-  
-  @media (min-width: $bp-md) {
+  grid-template-columns: repeat(4, 1fr);
+
+  @media (max-width: 1200px) {
     grid-template-columns: repeat(2, 1fr);
   }
   
-  @media (min-width: $bp-lg) {
-    grid-template-columns: repeat(4, 1fr);
+  @media (max-width: $bp-lg) {
+    grid-template-columns: repeat(1, 1fr);
   }
 
 
