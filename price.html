@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANTI SCHOOL</title>
+    <link rel="stylesheet" href="./style/css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Michroma&family=Oswald:wght@300;500&family=Russo+One&family=Unbounded&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><img src="./image/logo.svg" height="80" alt="" /></div>
+        <ul>
+          <li><a href="./">Головна</a></li>
+          <li><a href="./aboutUs.html">Про нас</a></li>
+          <li class="active"><a href="./price.html">Ціни</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero mask">
+        <div class="hero-content">
+          <h1 class="hero-title"><span>ANTI</span> <span>SCHOOL</span></h1>
+          <p class="hero-text">Твій куточок для творчості і розвитку</p>
+          <a href="#form" class="button primary">Зареєструватися</a>
+        </div>
+      </section>
+
+
+
+
+      <section class="ways">
+        
+      </section>
+
+      <section class="pice">
+        <h2 class="hide">Ціни</h2>
+
+
+        <ul class="pricing-table">
+          <li class="pricing-option">
+            <i class="fa-solid fa-star"></i>
+            <h2>Одноразові заняття</h2>
+            <p>
+              Немає постійного розпорядку тижня? В любу хвилину можуть змінитись плани? ТОді цей варіант для Вас!
+            </p>
+            <div class="price">
+              <div class="front">
+                <span class="price">100 <b>₴</b></span>
+              </div>
+              <div class="back">
+                <a href="./index.html#form" class="button">Зареєструватися</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pricing-option">
+            <i class="fa-solid fa-bomb"></i>
+            <h2>Абонимент 4</h2>
+            <p>
+              Не хочете приділяти багато часу, але є бажання навчитись новому? Обирайте любий один день на вибір і займайтесь 1 раз на тиждень. 
+            </p>
+            <div class="price">
+              <div class="front">
+                <span class="price">350 <b>₴</b></span>
+              </div>
+              <div class="back">
+                <a href="./index.html#form" class="button">Зареєструватися</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pricing-option">
+            <i class="fa-solid fa-heart"></i>
+            <h2>Абонимент 8</h2>
+            <p>
+              Можете точно розписати весь місяць? Обирайте два дні і займайтесь 2 рази на тиждень. 
+            </p>
+            <div class="price">
+              <div class="front">
+                <span class="price">700<b>₴</b></span>
+              </div>
+              <div class="back">
+                <a href="./index.html#form" class="button">Зареєструватися</a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="pricing-option">
+            <i class="fa-solid fa-bolt"></i>
+            <h2>Пробне</h2>
+            <p>
+              Хочете просто спробувати? 
+            </p>
+            <div class="price">
+              <div class="front">
+                <span class="price">70<b>₴</b></span>
+              </div>
+              <div class="back">
+                <a href="./index.html#form" class="button">Зареєструватися</a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+
+
+
+
+      </section>
+
+
+
+
+
+
+    </main>
+    <footer>
+      <div class="text-content">
+        <h2>Зателефонуй до Нас, аби підібрати направлення саме для Тебе!</h2>
+      </div>
+
+      <ul class="number">
+        <li>
+          <a href="tel:+380677339195"><i class="fa-solid fa-mobile"></i><span>+38(067) 733-91-95</span></a>
+        </li>
+        <li>
+          <a href="tel:+380937323439"><i class="fa-solid fa-mobile-button"></i><span>+38(093) 732-34-39</span></a>
+        </li>
+      </ul>
+      <ul class="social">
+        <li>
+          <a href="https://www.instagram.com/_antischool_/"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://t.me/holerion"><i class="fa-brands fa-telegram"></i></a>
+        </li>
+        <li>
+          <a href="https://discord.gg/3PfktzSVct"><i class="fa-brands fa-discord"></i></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script>
+      const slideBG = (herBG) => {
+        herBG.style.backgroundPosition = scrollY / 25 + 10 + "%";
+      };
+
+      window.addEventListener("scroll", function () {
+        slideBG(document.querySelector(".hero"));
+      });
+    </script>
+    <script src="https://kit.fontawesome.com/03abd041c3.js" crossorigin="anonymous"></script>
+  </body>
+</html>

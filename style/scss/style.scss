@@ -21,7 +21,7 @@ $white-color:rgb(245, 245, 245);
 @import "./_aboutUs.scss";
 @import "./_info.scss";
 @import "./_ourSection.scss";
-@import "./_contactsPage.scss";
+@import "./_pricePage.scss";
 
 li {
   list-style: none;  
@@ -101,8 +101,8 @@ s{
 .hide {
   position: absolute;
   z-index: -1;
-  top: -100px;
-  left: -100px;
+  top: -1000px;
+  left: -1000px;
 }
 
 .container-text {
@@ -137,24 +137,4 @@ section {
   }  
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
