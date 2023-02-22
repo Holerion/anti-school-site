@@ -15,6 +15,16 @@ footer {
     color: $white-color;
   }
 
+  .text-content{
+    width: min(80%,1000px);
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  h2{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
   svg {
     font-size: 2.5rem;
   }
