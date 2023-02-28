@@ -18,22 +18,16 @@ $bp-lg: 800px;
 
 .cards {
 
-  display: grid;
-  grid-gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
   margin-top: -150px;
   font-family: var(--font-sans);
-  grid-template-columns: repeat(4, 1fr);
 
-  @media (max-width: 1200px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  @media (max-width: $bp-lg) {
-    grid-template-columns: repeat(1, 1fr);
-  }
 
 
 
@@ -44,7 +38,8 @@ $bp-lg: 800px;
   align-items: flex-end;
   overflow: hidden;
   padding: 1rem;
-  width: 100%;
+  width: 350px;
+  margin: 1%;
   text-align: center;
   color: whitesmoke;
   background-color: whitesmoke;
@@ -102,15 +97,13 @@ $bp-lg: 800px;
     transform: translateY(-50%);
     transition: transform calc(var(--d) * 2) var(--e);
   }
-  
-  @each $id in $imageIds {
-    $i: index($imageIds, $id);
-    
+  @for $i from 1 through 5 {
     &:nth-child(#{$i}):before {
       background-image: url(../../image/Info/imginfo#{$i}.jpg);
-      background-position: 50%;
-    }
-  }
+      background-position:calc( 50% * var(--i));
+    }}
+  
+
 }
 
 .content {

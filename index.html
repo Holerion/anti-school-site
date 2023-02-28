@@ -17,7 +17,7 @@
   <body onload="slideBG(document.querySelector('.hero'))">
     <header>
       <nav>
-        <div class="logo"><img src="./image/logo.svg" height="80" alt="" /></div>
+        <div class="logo"><img src="./image/logo.png" height="80" alt="" /></div>
         <ul>
           <li class="active"><a href="./">Головна</a></li>
           <li><a href="./works.html">Роботи учнів</a></li>
@@ -36,34 +36,42 @@
 
       <section class="info">
         <ul class="cards">
-          <li class="card">
+          <li class="card" style="--i:1.5">
             <div class="content">
               <h3 class="title">Programing</h3>
               <p class="copy">Навчись створювати десктопні програми.</p>
               <a href="#form" class="btn">Хочу навчитись</a>
             </div>
           </li>
-          <li class="card">
+          <li class="card" style="--i:1">
             <div class="content">
               <h2 class="title">Web-design</h2>
               <p class="copy">Створення сайтів з нуля на HTML, Css, JavaScript, Scss...</p>
               <a href="#form" class="btn">Хочу навчитись</a>
             </div>
           </li>
-          <li class="card">
+          <li class="card" style="--i:1.2">
             <div class="content">
               <h2 class="title">ART</h2>
               <p class="copy">Поринь в світ креативу.</p>
               <a href="#form" class="btn">Хочу навчитись</a>
             </div>
           </li>
-          <li class="card">
+          <li class="card" style="--i:1">
             <div class="content">
               <h2 class="title">Video</h2>
               <p class="copy">Змонтуй свої найкрутіші відео.</p>
               <a href="#form" class="btn">Хочу навчитись</a>
             </div>
           </li>
+          <li class="card" style="--i:1">
+            <div class="content">
+              <h2 class="title">3D Modeling</h2>
+              <p class="copy">Змоделюй свою мрію.</p>
+              <a href="#form" class="btn">Хочу навчитись</a>
+            </div>
+          </li>
+
         </ul>
       </section>
 
@@ -136,15 +144,23 @@
               </li>
               <li class="item">
                 <input id="02" type="checkbox" name="programing" value="2" />
-                <label for="02">programing</label>
+                <label for="02">Programing</label>
               </li>
               <li class="item">
                 <input id="03" type="checkbox" name="web-design" value="3" />
-                <label for="03">web-design</label>
+                <label for="03">Web-design</label>
+              </li>
+              <li class="item">
+                <input id="04" type="checkbox" name="web-design" value="3" />
+                <label for="04">Video</label>
+              </li>
+              <li class="item">
+                <input id="04" type="checkbox" name="web-design" value="3" />
+                <label for="04">Modeling</label>
               </li>
             </ul>
 
-            <input type="submit" class="button" value="Зареєструватись" />
+            <input type="submit" class="button" value="Зареєструватись" style="cursor: pointer;"/>
           </form>
 
           <div class="fon1"></div>
