@@ -56,7 +56,6 @@ h1 {
   grid-column-start: auto;
   grid-row-start: auto;
   color: #fff;
-  background:  url('../../image/pngegg.png');
   background-size: cover;
   background-position: center;
   box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
@@ -65,7 +64,7 @@ h1 {
   counter-increment: item-counter;
   
 
-  @for $i from 1 through 100 {
+  @for $i from 1 through 74 {
     &:nth-child(#{$i+11}) {
       background-image: url("../../image/works/#{$i}.webp");
     }
@@ -90,20 +89,19 @@ h1 {
     }
   }
 
-  &--medium {
+  &--medium, .cp_embed_iframe  {
     grid-column-end: span 2;
   }
 
   &--large {
-    grid-row-end: span 3;
+    grid-row-end: span 2;
   }
 
   &--full {
     grid-column-end: auto;
-
     @media screen and (min-width: 768px) {
       grid-column: 1/-1;
-      grid-row-end: span 2;
+      grid-row-end: span 1;
     }
   }
   
