@@ -35,10 +35,7 @@
     height: 750px;
     width: 500px;
 
-    @media screen and (max-width: 600px) {
-      width: 90%;
-      left: 5%;
-    }
+
 
     background-color: $akcent-color;
     border-radius: 15px;
@@ -67,6 +64,8 @@
       font-size: 1.2rem;
     }
 
+
+
     .container {
       
   border-radius: 10px;
@@ -76,7 +75,36 @@
       background: #621f23;
       box-shadow: inset 8px 8px 6px #361113, inset -8px -8px 6px #8e2d33;
     }
+
+    @media screen and (max-width: 600px) {
+      width: 90%;
+      left: 5%;
+      
+    height: 750px;
+  
+    .container {
+          margin-top: 5px;
+        }
+  
+    h2{
+      
+      line-height: 1.1;
+      font-size: 1.2rem;
+      
+      margin-bottom: 10px;
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+      
+      margin-top: 5px;
+    }
+    }
   }
+
+
+
+
 }
 
 .input {
